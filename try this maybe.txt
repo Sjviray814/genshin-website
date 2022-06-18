@@ -1,0 +1,11 @@
+// form component
+const [input1, setInput1] = useState('');
+const [input2, setInput2] = useState('');
+...
+<Input value={input1} onChange={setInput1} />
+<Input value={input2} onChange={setInput2} />
+
+// Input component
+function Input({value, onChange}) {
+  return <input value={value} onChange={ e => onChange(e.target.value) } />
+}
