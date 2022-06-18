@@ -4,7 +4,7 @@ import './Header.css'
 const Header = () =>{
     return(
         <div>
-            <h1>
+            <h1 unselectable="on">
             Sjviray814's Genshin Calculating Stuff
             </h1>
         </div>

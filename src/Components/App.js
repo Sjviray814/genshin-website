@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './Form/Form.js'
+import Comparer from './DamageComparer/Comparer.js'
 import Header from './Header/Header.js'
 import './App.css';
 
@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div className="app">
             <Header />
-            <Form/>
+            <Comparer/>
         </div>
 
     )

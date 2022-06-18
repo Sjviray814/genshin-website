@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 
-const Textbox = ({value, onChange, width, height}) => {
+const Textbox = ({value, onChange, width, height, placeholder}) => {
 
     const textboxStyle = {
         width: width,
@@ -12,7 +12,8 @@ const Textbox = ({value, onChange, width, height}) => {
         <input type="text" 
         value={value} 
         onChange={e => onChange(e.target.value)}
-        style={textboxStyle}></input>
+        style={textboxStyle}
+        placeholder={placeholder}></input>
     )
 }
 

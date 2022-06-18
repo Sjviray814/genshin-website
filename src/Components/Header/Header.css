@@ -1,7 +1,5 @@
-*{
-    color: white;
-}
 h1{
+    color: white;
     position: absolute;
     left: 35rem;
     font-size: 4rem;
@@ -9,4 +7,5 @@ h1{
     max-width: 50rem;
     top: 2rem;
     text-align: center;
+    user-select: none;
 }
