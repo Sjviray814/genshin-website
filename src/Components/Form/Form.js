@@ -4,14 +4,14 @@ import Textbox from './Textbox/Textbox.js'
 const Form = () => {
 
     const getText = () =>{
-        console.log(document.getElementById('box1').value);
+        console.log("hi");
     }
 
     return (
         <div className="form">
             < Textbox id="box1"/>
             < Textbox/>
-            <input type="button" onclick={getText}>Get Text</input>
+            <input type="button" onClick={getText}></input>
         </div>
 
     )
