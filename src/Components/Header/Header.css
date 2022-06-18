@@ -1,0 +1,12 @@
+*{
+    color: white;
+}
+h1{
+    position: absolute;
+    left: 35rem;
+    font-size: 4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 50rem;
+    top: 2rem;
+    text-align: center;
+}

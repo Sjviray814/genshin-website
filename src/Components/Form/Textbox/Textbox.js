@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
 
 
-const Textbox = () => {
-    const [textValue, setTextValue] = useState(""); 
+const Textbox = ({value, onChange, width, height}) => {
 
-    const inputChange = (event) =>{
-        setTextValue(event.target.value);
+    const textboxStyle = {
+        width: width,
+        height:height
     }
 
-
     return(
-        <input type="text" value={textValue} onChange={inputChange}></input>
+        <input type="text" 
+        value={value} 
+        onChange={e => onChange(e.target.value)}
+        style={textboxStyle}></input>
     )
 }
 
