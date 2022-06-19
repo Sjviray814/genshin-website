@@ -11,6 +11,10 @@ const Comparer = () => {
     const [Low2, setLow2] = useState('');
     const [CRate2, setCRate2] = useState('');
 
+    const textWidth = "4.5vw";
+    const textHeight = "3.25vh";
+    const textFontSize = "1.5vh";
+
 
     return (
         <div className="comparer">
@@ -23,25 +27,28 @@ const Comparer = () => {
             <Textbox 
              value={High1}
              onChange={setHigh1} 
-             width="5rem" 
-             height="2rem"
+             width={textWidth}
+             height={textHeight}
              placeholder="High"
+             fontSize={textFontSize}
              />
 
             <Textbox 
              value={Low1}
              onChange={setLow1} 
-             width="5rem" 
-             height="2rem"
+             width={textWidth}
+             height={textHeight}
              placeholder="Low"
+             fontSize={textFontSize}
              />
 
             <Textbox 
              value={CRate1}
              onChange={setCRate1} 
-             width="5rem" 
-             height="2rem"
+             width={textWidth}
+             height={textHeight}
              placeholder="Crit Rate"
+             fontSize={textFontSize}
              />
              </div>
 
@@ -51,25 +58,28 @@ const Comparer = () => {
             <Textbox 
              value={High2}
              onChange={setHigh2} 
-             width="5rem" 
-             height="2rem"
+             width={textWidth}
+             height={textHeight}
              placeholder="High"
+             fontSize={textFontSize}
              />
 
             <Textbox 
-             value={Low1}
+             value={Low2}
              onChange={setLow2} 
-             width="5rem" 
-             height="2rem"
+             width={textWidth}
+             height={textHeight}
              placeholder="Low"
+             fontSize={textFontSize}
              />
 
             <Textbox 
-             value={CRate1}
+             value={CRate2}
              onChange={setCRate2} 
-             width="5rem" 
-             height="2rem"
+             width={textWidth}
+             height={textHeight}
              placeholder="Crit Rate"
+             fontSize={textFontSize}
              />
              </div>
 

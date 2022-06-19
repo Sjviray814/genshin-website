@@ -9,3 +9,7 @@ const [input2, setInput2] = useState('');
 function Input({value, onChange}) {
   return <input value={value} onChange={ e => onChange(e.target.value) } />
 }
+
+
+HERE IS THE ICON:
+ⓘ

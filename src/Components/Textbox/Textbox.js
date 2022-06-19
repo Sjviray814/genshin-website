@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 
 
-const Textbox = ({value, onChange, width, height, placeholder}) => {
+const Textbox = ({value, onChange, width, height, placeholder, fontSize}) => {
 
     const textboxStyle = {
         width: width,
-        height:height
+        height:height,
+        fontSize: fontSize
     }
 
     return(

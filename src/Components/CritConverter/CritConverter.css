@@ -1,6 +1,7 @@
-.comparer{
+.converter{
     position: absolute;
     top:33vh;
+    left:75vw;
     margin: 1.5%;
     max-width: 30vw;
 }
@@ -10,20 +11,13 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 6%;
 }
-.build1{
-    color: white;
-    font-size: 4.5vh;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 1%;
-    user-select: none;
-}
-.textboxes{
-    margin-bottom: 8%;
+.textboxes2{
+    margin-bottom: 3%;
 }
 .name{
     user-select: none;
 }
-.compare{
+.convert{
     background-color: white;
     position:relative;
     margin-top: 5%;
@@ -31,4 +25,10 @@
     height:2.5vw;
     padding:1% 2%;
     font-size:1vw;
+}
+.response3{
+    color: cyan;
+    font-size: 2.5vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20%;
 }
