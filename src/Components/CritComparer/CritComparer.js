@@ -24,7 +24,12 @@ const CritComparer = () => {
             
         }
         else{
-            let compared = critCompare(CRate1, CDMG1, CRate2, CDMG2);
+            let compared = critCompare(parseFloat(CRate1), parseFloat(CDMG1), parseFloat(CRate2), parseFloat(CDMG2));
+            
+            if(CRate1 == '' || CDMG1 == '' || CRate2 == '' || CDMG2 == '' ){
+                setResponse('Please make sure all of the boxes are filled in');
+                return;
+            }
 
             //First build is better:
             if(compared[0] > compared[1]){
@@ -40,11 +45,22 @@ const CritComparer = () => {
         }
     }
 
+    function showPopup(){
+        let popup = document.getElementById('popuptext2');
+        popup.classList.toggle('show');
+    }
+
 
     return (
         <div className="critComparer">
 
-            <div className='name2'>Crit Comparer</div>
+            <div className='name2'>Crit Comparer  
+            
+                <div className='popup2' onClick={showPopup}>ⓘ 
+                    <span className='popuptext2' id='popuptext2'>Use this to compare crit builds.  Make sure that your crit rate and crit damage are written in decimal form. Note that this does not factor in atk or dmg% and is purely a crit stat comparer.</span>
+                </div>
+            
+            </div>
 
 
             <div className='build2'>Build 1:</div>

@@ -31,4 +31,52 @@
     font-size: 2.5vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 20%;
+    user-select: none;
 }
+
+
+
+
+/* THIS STUFF WAS STOLEN FROM W3SCHOOLS */
+
+.popup3{
+    cursor:pointer;
+    display:inline-block;
+    color:aqua;
+}
+
+.popup3 .popuptext3{
+    visibility: hidden;
+    font-size: 2.5vh;
+    max-width: 20vw;
+    color: #fff;
+    background-color: #555;
+    text-align: center;
+    border-radius: 7%;
+    padding: 3% 0;
+    position: absolute;
+    z-index: 1;
+    top: 28vh;
+    left: 30%;
+    margin-left: -30%;
+}
+
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup3 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

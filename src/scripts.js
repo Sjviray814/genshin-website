@@ -1,4 +1,4 @@
-function averageDamage(high, low, cr, raw){
+function averageDamage(high, low, cr){
     let sum = 0;
     let tries = 1000;
     
@@ -11,8 +11,7 @@ function averageDamage(high, low, cr, raw){
     }
     }
     //console.log(sum/tries);
-    if(raw) return sum;
-    return(sum/tries);
+    return([sum/tries, sum]);
 }
 
 
@@ -21,10 +20,12 @@ function damageCompare(high1, low1, cr1, high2, low2, cr2){
     let wins2 = 0;
     let sum1 = 0;
     let sum2 = 0;
-    for(let i = 0; i < 10000; i++){
-        averageDamage(high1, low1, cr1, false) > averageDamage(high2, low2, cr2, false) ? wins1++ : wins2++;
-        sum1 += averageDamage(high1, low1, cr1, true);
-        sum2 += averageDamage(high2, low2, cr2, true);
+    for(let i = 0; i < 1000; i++){
+        let average = averageDamage(high1, low1, cr1);
+        let average2 = averageDamage(high2, low2, cr2);
+        average[0] > average2[0] ? wins1++ : wins2++;
+        sum1 += average[1];
+        sum2 += average2[1];
     }
     let percentage = sum1 > sum2 ? (sum1-sum2)/sum2 : (sum2-sum1)/sum1;
 
@@ -117,7 +118,7 @@ function normalize(cr, cd){
 function normalize2(cr, cd, error){
     let newClosest = [cr, cd, error];
     let newCalculated = calculate(cr, cd);
-    for(let cdTest = 1.95; cdTest <= 5; cdTest += .01){
+    for(let cdTest = 1.95; cdTest <= 10; cdTest += .01){
         // calculates the error value for this tested cr
         let error = Math.abs(newCalculated - calculate(1, cdTest)) / newCalculated;
         
@@ -128,6 +129,8 @@ function normalize2(cr, cd, error){
     let newNewCd = Math.round(1000*newClosest[1])/1000;
     return([100, newNewCd, newClosest[2]]);
 }
+
+
 
 
 
