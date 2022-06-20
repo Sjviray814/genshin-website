@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './CritComparer.css'
 import Textbox from '../Textbox/Textbox.js'
-import {averageDamage, damageCompare, averageCrit, critCompare, calculate, normalize, normalize2} from '/Users/sjviray/genshin-website/src/scripts.js'
+import {averageDamage, damageCompare, averageCrit, critCompare, calculate, normalize, normalize2} from '../../scripts';
 
 const CritComparer = () => {
 
