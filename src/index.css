@@ -1,5 +1,7 @@
 html{
-    background-image: url('https://images5.alphacoders.com/112/1123013.jpg');
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background: url(https://images5.alphacoders.com/112/1123013.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
